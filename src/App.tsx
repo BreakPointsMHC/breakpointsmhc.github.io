@@ -111,7 +111,7 @@ function Footer() {
   )
 }
 
-function Shell({ page, children }: { page: Page children: React.ReactNode }) {
+function Shell({ page, children }: { page: Page; children: React.ReactNode }) {
   return (
     <>
       <Header active={page} />

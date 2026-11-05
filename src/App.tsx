@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 type Page = "home" | "launchpad" | "team" | "catalog" | "resources"
 
-const navItems: { id: Page label: string }[] = [
+const navItems: { id: Page; label: string }[] = [
   { id: "home", label: "Home" },
   { id: "launchpad", label: "Launchpad" },
   { id: "team", label: "Team" },
@@ -111,7 +111,7 @@ function Footer() {
   )
 }
 
-function Shell({ page, children }: { page: Page children: React.ReactNode }) {
+function Shell({ page, children }: { page: Page; children: React.ReactNode }) {
   return (
     <>
       <Header active={page} />
